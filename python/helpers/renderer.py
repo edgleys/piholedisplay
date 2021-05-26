@@ -2,7 +2,7 @@
 
 from PIL import Image
 
-import collections as Collections
+import helpers.collections as Collections
 
 from lib import epd2in13b as Display
 
