@@ -18,7 +18,7 @@ def shell(command):
     Returns:
         string: The result from the shell command.
     '''
-    return str(subprocess.check_output(command, shell = True)).strip()
+    return str(subprocess.check_output(command, shell = True).decode('utf-8')).strip()
 
 def get_stats_pihole(cfg, log):
     '''Get stats for the Pi-Hole instance.
